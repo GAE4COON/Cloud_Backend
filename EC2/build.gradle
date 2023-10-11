@@ -34,6 +34,31 @@ dependencies {
 	implementation 'org.projectlombok:lombok:1.18.22' // version은 Lombok의 최신 버전으로 설정해주세요.
 	annotationProcessor 'org.projectlombok:lombok:1.18.22'
 
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.jetbrains:annotations:24.0.0'
+	implementation 'com.antkorwin:common-utils:1.2'
+	compileOnly 'org.projectlombok:lombok'
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	runtimeOnly 'com.mysql:mysql-connector-j'
+	annotationProcessor 'org.projectlombok:lombok'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	implementation "org.springframework.boot:spring-boot-starter-security"
+	implementation "org.springframework.security:spring-security-test"
+	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.2.0'
+	implementation 'org.springframework.boot:spring-boot-starter-mail'
+	implementation 'org.springframework:spring-context:6.0.7'
+	implementation 'org.springframework:spring-context-support:6.0.7'
+	implementation 'com.sun.mail:jakarta.mail:2.0.1'
+
+	implementation 'io.jsonwebtoken:jjwt-api:0.11.5'
+	implementation 'io.jsonwebtoken:jjwt-impl:0.11.5'
+	implementation 'io.jsonwebtoken:jjwt-jackson:0.11.5'
+	implementation 'org.springframework.security:spring-security-oauth2-jose'
+	implementation 'org.springframework.security:spring-security-oauth2-resource-server'
+	implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+
+
 }
 
 tasks.named('test') {
