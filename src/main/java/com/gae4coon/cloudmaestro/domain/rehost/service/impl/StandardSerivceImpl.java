@@ -30,6 +30,8 @@ public class StandardSerivceImpl implements StandardServiceInterface {
             }
         }
 
+        System.out.println("groupeddata"+groupedData);
+
         Map<String, Object> result = new HashMap<>();
         List<Object> nodeDataArray = new ArrayList<>();
         int count = 1;
@@ -58,6 +60,8 @@ public class StandardSerivceImpl implements StandardServiceInterface {
         }
 
         result.put("nodeDataArray", nodeDataArray);
+
+        System.out.println("nodeDataArray"+nodeDataArray);
 
         return result;
     }
