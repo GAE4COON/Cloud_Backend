@@ -23,7 +23,7 @@ public class EC2Service {
                 .url(formattedUrl)
                 .get()
                 .addHeader("accept", "application/json")
-                .addHeader("authorization", "Bearer vntg_tkn_014d4aa24bbd5029e43f62a7bb6cca4ce7562770")
+                .addHeader("authorization", "Bearer vntg_tkn_0cd356dd118555b50423190498edbbd4ed67dcbe")
                 .build();
 
         Response response = client.newCall(request).execute();

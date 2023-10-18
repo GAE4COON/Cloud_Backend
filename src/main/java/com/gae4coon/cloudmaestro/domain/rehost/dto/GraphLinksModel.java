@@ -12,5 +12,8 @@ public class GraphLinksModel {
     private String linkKeyProperty;
     private List<NodeData> nodeDataArray;
     private List<LinkData> linkDataArray;
+    @JsonProperty("ec2")
+    private Ec2 ec2;
+    // getters and setters
 }
 

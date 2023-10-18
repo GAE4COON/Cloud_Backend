@@ -32,7 +32,7 @@ public class EC2Controller {
         ObjectMapper mapper = new ObjectMapper();
         try {
             JsonNode response = ec2Service.getVantagePricing(request.getPlatform(), request.getInstance(), request.getLifeCycle());
-            logger.info("price",response);
+            //logger.info("price",response);
             return new ResponseEntity<>(response, HttpStatus.OK);
         } catch (Exception e) {
 
