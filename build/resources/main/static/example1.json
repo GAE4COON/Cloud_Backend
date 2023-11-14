@@ -1,0 +1,16 @@
+{ "class": "GraphLinksModel",
+  "linkKeyProperty": "key",
+  "nodeDataArray": [
+{"key":"Arch_Amazon-Aurora_48","text":"1","figure":"Rectangle","color":"lightblue","source":"/img/AWS_icon/Arch_Database/Arch_Amazon-Aurora_48.svg","type":"Arch_Database","loc":"-313.86245161438103 -28.650506030294537","group":"Private subnet"},
+{"isGroup":true,"key":"Region","stroke":"rgba(0,198,0,0.3)","type":"group"},
+{"isGroup":true,"key":"Security Group","stroke":"rgba(255,165,0,0.3)","type":"group","group":"Region"},
+{"isGroup":true,"key":"Private subnet","stroke":"rgba(255,165,0,0.3)","type":"group","group":"Virtual pricate cloud (VPC)"},
+{"isGroup":true,"key":"Virtual pricate cloud (VPC)","stroke":"rgba(0,0,198,0.3)","type":"group","group":"Region"},
+{"key":"Arch_Amazon-EC2_48","text":"1","figure":"Rectangle","color":"lightblue","source":"/img/AWS_icon/Arch_Compute/Arch_Amazon-EC2_48.svg","type":"Arch_Compute","loc":"-307.2679138183594 -150.2505149948331","group":"Private subnet"},
+{"key":"Arch_AWS-Cloud9_48","text":"1","figure":"Rectangle","color":"lightblue","source":"/img/AWS_icon/Arch_Developer-Tools/Arch_AWS-Cloud9_48.svg","type":"Arch_Developer-Tools","loc":"36.9249267578125 -12.399986267089844","group":"Security Group"},
+{"key":"Arch_Amazon-Simple-Storage-Service_48","text":"1","figure":"Rectangle","color":"lightblue","source":"/img/AWS_icon/Arch_Storage/Arch_Amazon-Simple-Storage-Service_48.svg","type":"Arch_Storage","loc":"-143.074951171875 -188.39998626708984","group":"Virtual pricate cloud (VPC)"}
+],
+  "linkDataArray": [
+{"from":"Arch_Amazon-EC2_48","to":"Arch_Amazon-Aurora_48","key":-1},
+{"from":"Private subnet","to":"Arch_Amazon-Simple-Storage-Service_48","key":-2}
+]}

@@ -1,0 +1,68 @@
+{
+  "class": "GraphLinksModel",
+  "linkKeyProperty": "key",
+  "nodeDataArray": [
+    {
+      "key": "firewall",
+      "text": "1",
+      "figure": "Rectangle",
+      "color": "lightblue",
+      "source": "/img/Network_icon/firewall.svg",
+      "type": "Network_icon",
+      "loc": "-170.47500610351562 -209.89997100830078",
+      "group": -5
+    },
+    {
+      "key": "intrusion-detection",
+      "text": "1",
+      "figure": "Rectangle",
+      "color": "lightblue",
+      "source": "/img/Network_icon/intrusion-detection.svg",
+      "type": "Network_icon",
+      "loc": "-252.67498779296875 -344.3999710083008",
+      "group": -5
+    },
+    {
+      "key": "storage",
+      "text": "1",
+      "figure": "Rectangle",
+      "color": "lightblue",
+      "source": "/img/Network_icon/storage.svg",
+      "type": "Network_icon",
+      "loc": "-391.8500213623047 -284.04998779296875",
+      "group": -5
+    },
+    {
+      "key": "server",
+      "text": "1",
+      "figure": "Rectangle",
+      "color": "lightblue",
+      "source": "/img/Network_icon/server.svg",
+      "type": "Network_icon",
+      "loc": "-270.67498779296875 -232.39998626708984",
+      "group": -5
+    },
+    {
+      "text": "Group",
+      "isGroup": true,
+      "key": -5
+    }
+  ],
+  "linkDataArray": [
+    {
+      "from": "storage",
+      "to": "server",
+      "key": -1
+    },
+    {
+      "from": "intrusion-detection",
+      "to": "server",
+      "key": -2
+    },
+    {
+      "from": "firewall",
+      "to": "server",
+      "key": -3
+    }
+  ]
+}
