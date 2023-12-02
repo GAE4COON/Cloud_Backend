@@ -7,7 +7,6 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.w3c.dom.Node;
 
-import javax.swing.*;
 import java.util.List;
 
 @Service
@@ -126,30 +125,10 @@ public class AddResourceService {
                 .build();
     }
 
-    public GroupData addRegion(List<GroupData> groupDataList){
-        return GroupData.builder()
-                .isGroup(true)
-                .key("Region"+ diagramDTOService.getGroupNumber(groupDataList, "Region"))
-                .text("Region")
-                .type("AWS_Groups")
-                .stroke("rgb(0,164,166)")
-                .build();
-    }
-
     public GroupData addAvailabilityZone(){
         return GroupData.builder()
                 .isGroup(true)
                 .key("Availability Zone")
-                .text("Availability Zone")
-                .type("AWS_Groups")
-                .stroke("rgb(0,164,166)")
-                .build();
-    }
-
-    public GroupData addAvailabilityZone(List<GroupData> groupDataList){
-        return GroupData.builder()
-                .isGroup(true)
-                .key("Availability Zone"+ diagramDTOService.getGroupNumber(groupDataList, "Availability Zone"))
                 .text("Availability Zone")
                 .type("AWS_Groups")
                 .stroke("rgb(0,164,166)")
@@ -165,17 +144,6 @@ public class AddResourceService {
                 .stroke("rgb(221,52,76)")
                 .build();
     }
-
-    public GroupData addSecurityGroup(List<GroupData> groupDataList){
-        return GroupData.builder()
-                .isGroup(true)
-                .key("Security Group"+ diagramDTOService.getGroupNumber(groupDataList, "Security Group"))
-                .text("Security Group")
-                .type("AWS_Groups")
-                .stroke("rgb(221,52,76)")
-                .build();
-    }
-
 
     public GroupData addServercontents(){
         return GroupData.builder()
@@ -211,16 +179,6 @@ public class AddResourceService {
         return GroupData.builder()
                 .isGroup(true)
                 .key("VPC")
-                .text("VPC")
-                .type("AWS_Groups")
-                .stroke("rgb(140,79,255)")
-                .build();
-    }
-
-    public GroupData addVPC(List<GroupData> groupDataList){
-        return GroupData.builder()
-                .isGroup(true)
-                .key("VPC"+ diagramDTOService.getGroupNumber(groupDataList, "VPC"))
                 .text("VPC")
                 .type("AWS_Groups")
                 .stroke("rgb(140,79,255)")
@@ -7557,15 +7515,6 @@ public class AddResourceService {
     public NodeData addNetworkFirewallEndpoints(){
         return NodeData.builder()
                 .key("Network Firewall Endpoints")
-                .text("Network Firewall Endpoints")
-                .source("/img/AWS_icon/Resource_icon/Res_Security-Identity-Compliance/Res_AWS-Network-Firewall_Endpoints_48.svg")
-                .type("Security-Identity-Compliance")
-                .build();
-    }
-
-    public NodeData addNetworkFirewallEndpoints(List<NodeData> nodeDataList){
-        return NodeData.builder()
-                .key("Network Firewall Endpoints"+diagramDTOService.getNodeNumber(nodeDataList, "Network Firewall Endpoints"))
                 .text("Network Firewall Endpoints")
                 .source("/img/AWS_icon/Resource_icon/Res_Security-Identity-Compliance/Res_AWS-Network-Firewall_Endpoints_48.svg")
                 .type("Security-Identity-Compliance")

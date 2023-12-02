@@ -115,16 +115,6 @@ public class DiagramDTOService {
         return nestedGroup;
     }
 
-    public List<GroupData> getNestedGroupDataList(List<GroupData> groupDataList, String groupName){
-        List<GroupData> nestedGroup = new ArrayList<>();
-        for (GroupData groupData: groupDataList){
-            if (groupData.getGroup()!=null && groupData.getGroup().equals(groupName)){
-                nestedGroup.add(groupData);
-            }
-        }
-        return nestedGroup;
-    }
-
     public Set<String> getNestedGroupListByLabel(List<GroupData> groupDataList, String groupLabel){
         Set<String> nestedGroup = new HashSet<>();
         for (GroupData groupData: groupDataList){
@@ -154,6 +144,7 @@ public class DiagramDTOService {
             if(link.getFrom().equals(from))
                 linklist.add(link);
         }
+
         return linklist;
     }
     public boolean isLink(List<LinkData> LinkDataList, String from, String to){
@@ -225,8 +216,6 @@ public class DiagramDTOService {
         }
         return number; // number 반환
     }
-
-
     public int getGroupNumber(List<GroupData> groupDataList, String text){
         int number=0;
 
